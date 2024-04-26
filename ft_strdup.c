@@ -6,7 +6,7 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 11:45:33 by ldick             #+#    #+#             */
-/*   Updated: 2024/03/08 16:02:28 by ldick            ###   ########.fr       */
+/*   Updated: 2024/04/26 13:12:05 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,9 @@
 char	*ft_strdup(const char *s1)
 {
 	char		*dest;
-	size_t		count;
 	size_t		i;
 
 	i = 0;
-	count = 0;
 	while (s1[i])
 		i++;
 	dest = (char *)malloc(sizeof(*dest) * i + 1);

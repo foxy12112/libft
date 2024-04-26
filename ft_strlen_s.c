@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen_no_nl.c                                  :+:      :+:    :+:   */
+/*   ft_strlen_s.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 01:15:01 by ldick             #+#    #+#             */
-/*   Updated: 2024/04/20 01:52:38 by ldick            ###   ########.fr       */
+/*   Updated: 2024/04/26 13:12:24 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strlen_no_nl(char *str)
+size_t	ft_strlen_s(char *str, int c)
 {
-	int i;
+	size_t	i;
 
 	i = 0;
 	while (str[i] != '\0')
 	{
 		if (str[i + 1] == '\0')
-			break;
-		if (str[i] == '\n')
-			continue;
+			break ;
+		if (str[i] == c)
+			continue ;
 		i++;
 	}
 	return (i);
