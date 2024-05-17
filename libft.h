@@ -6,7 +6,7 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 10:58:18 by ldick             #+#    #+#             */
-/*   Updated: 2024/05/17 11:46:09 by ldick            ###   ########.fr       */
+/*   Updated: 2024/05/17 11:49:03 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,6 +117,16 @@ double				atodbl(char *s);
  * @return the ascii difference between the two strings
 */
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
+
+/**
+ * @brief compares the ascii value between two strings
+ * @note only compares until a difference is found
+ * 
+ * @param[in] s1 - string to compare
+ * @param[in] s2 - string to compare to
+ * @return the ascii difference between the two strings
+*/
+int					ft_strcmp(const char *s1, const char *s2);
 
 /**
  * @brief compares the ascii value between two strings
