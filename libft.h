@@ -6,7 +6,7 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 10:58:18 by ldick             #+#    #+#             */
-/*   Updated: 2024/04/28 20:30:02 by ldick            ###   ########.fr       */
+/*   Updated: 2024/05/17 11:46:09 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,6 +98,14 @@ int					ft_tolower(int c);
  * @return str as an integer
 */
 int					ft_atoi(const char *str);
+
+/**
+ * @brief this function take a character string and turns it into an double
+ * 
+ * @param[in] s - the  string
+ * @return s as a double
+*/
+double				atodbl(char *s);
 
 /**
  * @brief compares the ascii value between two strings
