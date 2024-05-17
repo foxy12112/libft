@@ -6,7 +6,7 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 10:58:18 by ldick             #+#    #+#             */
-/*   Updated: 2024/05/17 11:49:03 by ldick            ###   ########.fr       */
+/*   Updated: 2024/05/17 12:01:37 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -187,7 +187,8 @@ size_t				ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t				ft_strlcpy(char *dst, const char *src, size_t dstsize);
 
 /**
- * @brief allocates enough memory for count objects that are size big and sets the allocated memory to zero
+ * @brief allocates enough memory for count objects 
+ * that are size big and sets the allocated memory to zero
  * 
  * @param[in] count - the amount of objects
  * @param[in] size - the size of each count object
@@ -301,7 +302,8 @@ void				ft_lstadd_front(t_list **lst, t_list *new);
 void				ft_lstadd_back(t_list **lst, t_list *new);
 
 /**
- * @brief takes a node and frees the memory of the ndoes content using the function del
+ * @brief takes a node and frees the memory
+ *  of the ndoes content using the function del
  * 
  * @param[in] del - the node of the function used to delete the content
  * @param[in] lst - the node to free
@@ -309,16 +311,19 @@ void				ft_lstadd_back(t_list **lst, t_list *new);
 void				ft_lstdelone(t_list *lst, void (*del)(void *));
 
 /**
- * @brief deletes and frees the given node and every successo of that node using the function del and free
+ * @brief deletes and frees the given node 
+ * and every successo of that node using the function del and free
  * @note the pointer to the list is set to NULL
  * 
  * @param[in] lst - the address of a pointer to a node
- * @param[in] del - the address of the function used to delete the content of the node
+ * @param[in] del - the address of the function 
+ * used to delete the content of the node
 */
 void				ft_lstclear(t_list **lst, void (*del)(void *));
 
 /**
- * @brief iterates the list lst and applies the function f on the content of each node
+ * @brief iterates the list lst and applies
+ *  the function f on the content of each node
  * 
  * @param[in] lst - the address of a pointer to a node
  * @param[in] f - the adress of a function used to iterate on the list
@@ -336,7 +341,8 @@ void				ft_lstiter(t_list *lst, void (*f)(void *));
 char				*ft_strchr(const char *s, int c);
 
 /**
- * @brief allocates memory to copy the string s1, makes the copy and returns a pointer to it
+ * @brief allocates memory to copy the 
+ * string s1, makes the copy and returns a pointer to it
  * 
  * @param[in] s1 - the string to copy
  * @return the copied string
@@ -353,7 +359,8 @@ char				*ft_strdup(const char *s1);
 char				*ft_strrchr(const char *s, int c);
 
 /**
- * @brief locates the first occurance of the null terminated string needle in the string haystack
+ * @brief locates the first occurance 
+ * of the null terminated string needle in the string haystack
  * 
  * @param[in] needle - the string to find
  * @param[in] haystack - the string to search
@@ -373,7 +380,6 @@ char				*ft_strnstr(const char *haystack, const char *needle,
 */
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 
-
 /**
  * @brief concates the string s1 and s2
  * 
@@ -383,16 +389,15 @@ char				*ft_substr(char const *s, unsigned int start, size_t len);
 */
 char				*ft_strjoin(char const *s1, char const *s2);
 
-
 /**
- * @brief itterates through the string s and applies the funciton f on each character
+ * @brief itterates through the string s 
+ * and applies the funciton f on each character
  * 
  * @param[in] s - the string to which to apply the functinos to
  * @param[in] f - the function to apply
  * @return the string created from the succesive applicaiton of f
 */
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-
 
 /**
  * @brief removes set from the beginnign and end of the string
@@ -437,12 +442,19 @@ t_list				*ft_lstnew(void *content);
 t_list				*ft_lstlast(t_list *lst);
 
 /**
- * @brief iterates the list lst and applies the function f on the content of each node, creates a new list resulting of the successice application of the function f
- * @note del us ysed ti dekete the content of a node if needed
+ * @brief iterates the list lst and applies
+ *  the function
+ *  f on the content of each node, creates
+ *  a new list 
+ * resulting of the successice application 
+ * of the function f
+ * @note del us ysed ti dekete the content 
+ * of a node if needed
  * 
  * @param[in] lst - the address of a pointer to a node
  * @param[in] f -  the address of the function used to iterate on the list
- * @param[in] del - the address of the funciton used to delete the content of a node if needed
+ * @param[in] del - the address of the funciton
+ *  used to delete the content of a node if needed
  * @return the new list
 */
 t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
