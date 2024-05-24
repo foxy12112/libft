@@ -6,7 +6,7 @@
 #    By: ldick <ldick@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/07 12:33:21 by ldick             #+#    #+#              #
-#    Updated: 2024/05/17 11:48:15 by ldick            ###   ########.fr        #
+#    Updated: 2024/05/24 08:06:22 by ldick            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,7 +46,8 @@ SRCS =	ft_atoi.c		\
 		ft_itoa.c		\
 		ft_atodbl.c		\
 		ft_strcmp.c		\
-		ft_split.c
+		ft_split.c		\
+		ft_wordconut.c
 
 SRCS_BONUS =	ft_lstnew_bonus.c			\
 				ft_lstadd_front_bonus.c	\
