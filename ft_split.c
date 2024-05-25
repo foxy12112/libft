@@ -6,7 +6,7 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 11:43:58 by ldick             #+#    #+#             */
-/*   Updated: 2024/03/12 15:14:25 by ldick            ###   ########.fr       */
+/*   Updated: 2024/05/25 05:50:38 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ static void	initialize(size_t *i, int *j, int *s_word)
 	*s_word = -1;
 }
 
-char	**ft_split(const char *s, char c)
+char	**ft_split(char *s, char c)
 {
 	char	**res;
 	size_t	i;

@@ -6,7 +6,7 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 10:58:18 by ldick             #+#    #+#             */
-/*   Updated: 2024/05/24 08:06:07 by ldick            ###   ########.fr       */
+/*   Updated: 2024/05/25 05:52:04 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -425,7 +425,7 @@ char				*ft_itoa(int n);
  * @param[in] c - the delimiter
  * @return an array of strings slpit up at the point of the delimiter c
 */
-char				**ft_split(char const *s, char c);
+char				**ft_split(char *s, char c);
 
 /**
  * @brief creates a new node using the variable content
