@@ -6,7 +6,7 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 10:58:18 by ldick             #+#    #+#             */
-/*   Updated: 2024/05/25 05:52:04 by ldick            ###   ########.fr       */
+/*   Updated: 2024/05/31 13:19:12 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,9 @@ typedef struct s_list
 */
 int					ft_isalpha(int c);
 
-int	ft_wordcount(char *str, int delimiter);
+char				*ft_strcat(char *dst, char *src);
+
+int					ft_wordcount(char *str, int delimiter);
 
 /**
  * @brief checks if character is a number
