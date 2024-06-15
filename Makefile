@@ -6,7 +6,7 @@
 #    By: ldick <ldick@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/07 12:33:21 by ldick             #+#    #+#              #
-#    Updated: 2024/05/24 08:06:22 by ldick            ###   ########.fr        #
+#    Updated: 2024/06/10 10:08:19 by ldick            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -78,6 +78,7 @@ $(OBJS_DIR)%.o : %.c libft.h
 		@clang $(CC_FLAGS) -c $< -o $@
 
 $(NAME): $(OBJECTS_PREFIXED)
+	@echo "Building Libft"
 	@ar r $(NAME) $(OBJECTS_PREFIXED)
 
 all: $(NAME)
