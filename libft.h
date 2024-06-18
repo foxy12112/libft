@@ -6,7 +6,7 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 10:58:18 by ldick             #+#    #+#             */
-/*   Updated: 2024/05/25 05:52:04 by ldick            ###   ########.fr       */
+/*   Updated: 2024/06/18 12:28:03 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -261,6 +261,8 @@ void				ft_putnbr_fd(int n, int fd);
  * @param[in] fd - the file descriptor on which to write
 */
 void				ft_putchar_fd(char c, int fd);
+
+long				ft_atol(const char *str);
 
 /**
  * @brief writes the string s to the file desriptor fd followed by a newline

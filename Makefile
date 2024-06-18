@@ -6,11 +6,12 @@
 #    By: ldick <ldick@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/07 12:33:21 by ldick             #+#    #+#              #
-#    Updated: 2024/06/10 10:08:19 by ldick            ###   ########.fr        #
+#    Updated: 2024/06/18 12:28:13 by ldick            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS =	ft_atoi.c		\
+		ft_atol.c		\
 		ft_bzero.c		\
 		ft_calloc.c		\
 		ft_isalnum.c	\
