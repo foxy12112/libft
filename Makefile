@@ -6,12 +6,20 @@
 #    By: ldick <ldick@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/07 12:33:21 by ldick             #+#    #+#              #
+<<<<<<< HEAD
 #    Updated: 2024/05/31 13:19:36 by ldick            ###   ########.fr        #
+=======
+#    Updated: 2024/06/18 12:28:13 by ldick            ###   ########.fr        #
+>>>>>>> tmmp
 #                                                                              #
 # **************************************************************************** #
 
 SRCS =	ft_atoi.c		\
+<<<<<<< HEAD
 		ft_strcat.c		\
+=======
+		ft_atol.c		\
+>>>>>>> tmmp
 		ft_bzero.c		\
 		ft_calloc.c		\
 		ft_isalnum.c	\
@@ -79,6 +87,7 @@ $(OBJS_DIR)%.o : %.c libft.h
 		@clang $(CC_FLAGS) -c $< -o $@
 
 $(NAME): $(OBJECTS_PREFIXED)
+	@echo "Building Libft"
 	@ar r $(NAME) $(OBJECTS_PREFIXED)
 
 all: $(NAME)
