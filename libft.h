@@ -6,11 +6,7 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 10:58:18 by ldick             #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2024/05/31 13:19:12 by ldick            ###   ########.fr       */
-=======
-/*   Updated: 2024/06/18 13:16:20 by ldick            ###   ########.fr       */
->>>>>>> tmmp
+/*   Updated: 2024/06/19 10:14:46 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +31,8 @@ typedef struct s_list
 */
 int					ft_isalpha(int c);
 
-<<<<<<< HEAD
 char				*ft_strcat(char *dst, char *src);
 
-=======
->>>>>>> tmmp
 int					ft_wordcount(char *str, int delimiter);
 
 /**
