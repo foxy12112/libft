@@ -6,20 +6,12 @@
 #    By: ldick <ldick@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/07 12:33:21 by ldick             #+#    #+#              #
-<<<<<<< HEAD
-#    Updated: 2024/05/31 13:19:36 by ldick            ###   ########.fr        #
-=======
-#    Updated: 2024/06/18 12:28:13 by ldick            ###   ########.fr        #
->>>>>>> tmmp
+#    Updated: 2024/12/23 11:28:57 by ldick            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS =	ft_atoi.c		\
-<<<<<<< HEAD
 		ft_strcat.c		\
-=======
-		ft_atol.c		\
->>>>>>> tmmp
 		ft_bzero.c		\
 		ft_calloc.c		\
 		ft_isalnum.c	\
