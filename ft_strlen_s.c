@@ -6,7 +6,7 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 01:15:01 by ldick             #+#    #+#             */
-/*   Updated: 2024/04/26 13:12:24 by ldick            ###   ########.fr       */
+/*   Updated: 2024/12/30 13:38:25 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,17 @@
 size_t	ft_strlen_s(char *str, int c)
 {
 	size_t	i;
+	size_t	count;
 
+	count = 0;
 	i = 0;
 	while (str[i] != '\0')
 	{
 		if (str[i + 1] == '\0')
 			break ;
 		if (str[i] == c)
-			continue ;
+			count++;
 		i++;
 	}
-	return (i);
+	return (i - count);
 }
